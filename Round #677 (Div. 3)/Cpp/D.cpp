@@ -30,8 +30,8 @@ int main()
 				ans.push_back({pos + 1, i + 1});
 			}
 		}
-		cout << "YES" << "\n";
 
+		cout << "YES" << "\n";
 		for (auto [A, B] : ans) cout<<A<<" "<<B<<"\n";
 	}
 	
