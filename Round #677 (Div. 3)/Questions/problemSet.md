@@ -128,18 +128,18 @@ The piranha eats the first piranha and a becomes [7–,5].
 The piranha eats the second piranha and a becomes [8–].
 You have to answer t independent test cases.
 
-Input
+### Input
 The first line of the input contains one integer t (1≤t≤2⋅104) — the number of test cases. Then t test cases follow.
 
 The first line of the test case contains one integer n (2≤n≤3⋅105) — the number of piranhas in the aquarium. The second line of the test case contains n integers a1,a2,…,an (1≤ai≤109), where ai is the size of the i-th piranha.
 
 It is guaranteed that the sum of n does not exceed 3⋅105 (∑n≤3⋅105).
 
-Output
+### Output
 For each test case, print the answer: -1 if there are no dominant piranhas in the aquarium or index of any dominant piranha otherwise. If there are several answers, you can print any.
 
 Example
-inputCopy
+input
 6
 5
 5 3 4 4 5
@@ -153,7 +153,7 @@ inputCopy
 1 1 2
 5
 5 4 3 5 5
-outputCopy
+output
 3
 -1
 4
@@ -167,11 +167,13 @@ In the second test case of the example, there are no dominant piranhas in the aq
 
 In the third test case of the example, the fourth piranha can firstly eat the piranha to the left and the aquarium becomes [4,4,5,4], then it can eat any other piranha in the aquarium.
 
-D. Districts Connection
-time limit per test1 second
-memory limit per test256 megabytes
-inputstandard input
-outputstandard output
+                                                                        D. Districts Connection
+                                                                        time limit per test: 1 second
+                                                                        memory limit per test: 256 megabytes
+                                                                        input: standard input
+                                                                        output: standard output
+
+
 There are n districts in the town, the i-th district belongs to the ai-th bandit gang. Initially, no districts are connected to each other.
 
 You are the mayor of the city and want to build n−1 two-way roads to connect all districts (two districts can be connected directly or through other connected districts).
@@ -182,14 +184,14 @@ You don't want this so your task is to build n−1 two-way roads in such a way t
 
 You have to answer t independent test cases.
 
-Input
+### Input
 The first line of the input contains one integer t (1≤t≤500) — the number of test cases. Then t test cases follow.
 
 The first line of the test case contains one integer n (2≤n≤5000) — the number of districts. The second line of the test case contains n integers a1,a2,…,an (1≤ai≤109), where ai is the gang the i-th district belongs to.
 
 It is guaranteed that the sum of n does not exceed 5000 (∑n≤5000).
 
-Output
+### Output
 For each test case, print:
 
 NO on the only line if it is impossible to connect all districts satisfying the conditions from the problem statement.
@@ -197,7 +199,7 @@ YES on the first line and n−1 roads on the next n−1 lines. Each road should 
 For each road i, the condition a[xi]≠a[yi] should be satisfied. Also, all districts should be reachable from each other (possibly, using intermediate districts).
 
 Example
-inputCopy
+input
 4
 5
 1 2 2 1 3
@@ -207,7 +209,7 @@ inputCopy
 1 1000 101 1000
 4
 1 2 3 4
-outputCopy
+output
 YES
 1 3
 3 5
@@ -223,12 +225,16 @@ YES
 1 3
 1 4
 The problem statement has recently been changed. View the changes.
-×
-E. Two Round Dances
-time limit per test1 second
-memory limit per test256 megabytes
-inputstandard input
-outputstandard output
+
+
+
+                                                                                E. Two Round Dances
+                                                                                time limit per test: 1 second
+                                                                                memory limit per test: 256 megabytes
+                                                                                input: standard input
+                                                                                output:standard output
+
+
 One day, n people (n is an even number) met on a plaza and made two round dances, each round dance consists of exactly n2 people. Your task is to find the number of ways n people can make two round dances if each round dance consists of exactly n2 people. Each person should belong to exactly one of these two round dances.
 
 Round dance is a dance circle consisting of 1 or more people. Two round dances are indistinguishable (equal) if one can be transformed to another by choosing the first participant. For example, round dances [1,3,4,2], [4,2,1,3] and [2,1,3,4] are indistinguishable.
@@ -242,34 +248,40 @@ one round dance — [2,4], another — [3,1];
 one round dance — [4,1], another — [3,2].
 Your task is to find the number of ways n people can make two round dances if each round dance consists of exactly n2 people.
 
-Input
+### Input
 The input contains one integer n (2≤n≤20), n is an even number.
 
-Output
+### Output
 Print one integer — the number of ways to make two round dances. It is guaranteed that the answer fits in the 64-bit integer data type.
 
 Examples
-inputCopy
+input
 2
-outputCopy
+output
 1
-inputCopy
+input
 4
-outputCopy
+output
 3
-inputCopy
+input
 8
-outputCopy
+output
 1260
-inputCopy
+input
 20
-outputCopy
+output
 12164510040883200
-F. Zero Remainder Sum
-time limit per test1 second
-memory limit per test256 megabytes
-inputstandard input
-outputstandard output
+
+
+
+                                                                    F. Zero Remainder Sum
+                                                                    time limit per test: 1 second
+                                                                    memory limit per test: 256 megabytes
+                                                                    input: standard input
+                                                                    output:standard output
+                                                                    
+                                                                    
+                                                                    
 You are given a matrix a of size n×m consisting of integers.
 
 You can choose no more than ⌊m2⌋ elements in each row. Your task is to choose these elements in such a way that their sum is divisible by k and this sum is the maximum.
@@ -278,37 +290,40 @@ In other words, you can choose no more than a half (rounded down) of elements in
 
 Note that you can choose zero elements (and the sum of such set is 0).
 
-Input
+### Input
 The first line of the input contains three integers n, m and k (1≤n,m,k≤70) — the number of rows in the matrix, the number of columns in the matrix and the value of k. The next n lines contain m elements each, where the j-th element of the i-th row is ai,j (1≤ai,j≤70).
 
-Output
+### Output
 Print one integer — the maximum sum divisible by k you can obtain.
 
 Examples
-inputCopy
+input
 3 4 3
 1 2 3 4
 5 2 2 2
 7 1 1 4
-outputCopy
+output
 24
-inputCopy
+input
 5 5 4
 1 2 4 2 1
 3 5 1 2 4
 1 5 7 1 2
 3 8 7 1 2
 8 4 7 1 6
-outputCopy
+output
 56
 Note
 In the first example, the optimal answer is 2 and 4 in the first row, 5 and 2 in the second row and 7 and 4 in the third row. The total sum is 2+4+5+2+7+4=24.
 
-G. Reducing Delivery Cost
-time limit per test1 second
-memory limit per test256 megabytes
-inputstandard input
-outputstandard output
+
+
+
+                                                                            G. Reducing Delivery Cost
+                                                                            time limit per test: 1 second
+                                                                            memory limit per test: 256 megabytes
+                                                                            input: standard input
+                                                                            output: standard output
 You are a mayor of Berlyatov. There are n districts and m two-way roads between them. The i-th road connects districts xi and yi. The cost of travelling along this road is wi. There is some path between each pair of districts, so the city is connected.
 
 There are k delivery routes in Berlyatov. The i-th route is going from the district ai to the district bi. There is one courier on each route and the courier will always choose the cheapest (minimum by total cost) path from the district ai to the district bi to deliver products.
@@ -321,18 +336,18 @@ Let d(x,y) be the cheapest cost of travel between districts x and y.
 
 Your task is to find the minimum total courier routes cost you can achieve, if you optimally select the some road and change its cost with 0. In other words, you have to find the minimum possible value of ∑i=1kd(ai,bi) after applying the operation described above optimally.
 
-Input
+### Input
 The first line of the input contains three integers n, m and k (2≤n≤1000; n−1≤m≤min(1000,n(n−1)2); 1≤k≤1000) — the number of districts, the number of roads and the number of courier routes.
 
 The next m lines describe roads. The i-th road is given as three integers xi, yi and wi (1≤xi,yi≤n; xi≠yi; 1≤wi≤1000), where xi and yi are districts the i-th road connects and wi is its cost. It is guaranteed that there is some path between each pair of districts, so the city is connected. It is also guaranteed that there is at most one road between each pair of districts.
 
 The next k lines describe courier routes. The i-th route is given as two integers ai and bi (1≤ai,bi≤n) — the districts of the i-th route. The route can go from the district to itself, some couriers routes can coincide (and you have to count them independently).
 
-Output
+### Output
 Print one integer — the minimum total courier routes cost you can achieve (i.e. the minimum value ∑i=1kd(ai,bi), where d(x,y) is the cheapest cost of travel between districts x and y) if you can make some (at most one) road cost zero.
 
 Examples
-inputCopy
+input
 6 5 2
 1 2 5
 2 3 7
@@ -341,9 +356,9 @@ inputCopy
 4 6 8
 1 6
 5 3
-outputCopy
+output
 22
-inputCopy
+input
 5 5 4
 1 2 5
 2 3 4
@@ -354,17 +369,5 @@ inputCopy
 1 3
 3 3
 1 5
-outputCopy
+output
 13
-Note
-The picture corresponding to the first example:
-
-
-
-There, you can choose either the road (2,4) or the road (4,6). Both options lead to the total cost 22.
-
-The picture corresponding to the second example:
-
-
-
-There, you can choose the road (3,4). This leads to the total cost 13.
