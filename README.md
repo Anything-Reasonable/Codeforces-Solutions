@@ -2,7 +2,7 @@
 
 Directory Structure :-
 
-___ Contest Name and Number
-   |___ Questions Delatils (Contains Questions in md)
-   |___ Cpp (Solutions in Cpp)
-   |___ Java (Solutions in Java)
+___ Contest Name and Number <br>
+   |___ Questions Delatils (Contains Questions in md)<br>
+   |___ Cpp (Solutions in Cpp)<br>
+   |___ Java (Solutions in Java)<br>
